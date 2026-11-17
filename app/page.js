@@ -7,6 +7,7 @@ const projects = [
     number: "01",
     category: "ANDROID DEVELOPMENT",
     title: "MyBlog",
+   image: "/myblog-preview.jpg",
     description:
       "An offline-first Android blogging application concept focused on creating, managing and viewing posts, with local storage and synchronisation when connectivity returns.",
     stack: ["Android", "Java", "Firebase"],
@@ -24,6 +25,7 @@ const projects = [
     number: "02",
     category: "ANDROID DEVELOPMENT",
     title: "Android Firebase Chat Application",
+   image: "/chat-app-preview.jpg",
     description:
       "A mobile chat application developed with Java and Android Studio, using Firebase services for application functionality and data handling, with interfaces for authentication and messaging.",
     stack: ["Java", "Android Studio", "Firebase"],
@@ -40,6 +42,7 @@ const projects = [
     number: "03",
     category: "ARTIFICIAL INTELLIGENCE",
     title: "Customer Churn Prediction",
+   image: "/churn-dashboard-preview.jpg",
     description:
       "A research project exploring machine-learning methods to identify customers who may leave an e-commerce service and support better retention decisions.",
     stack: ["Python", "Machine Learning", "XAI"],
@@ -234,6 +237,11 @@ export default function Home() {
               <div className="project-number">{project.number}</div>
               <div className="project-main">
                 <p className="eyebrow">{project.category}</p>
+         {project.image && (
+  <div className="project-image">
+    <img src={project.image} alt={`${project.title} preview`} />
+  </div>
+)}
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="project-stack">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
