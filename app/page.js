@@ -287,7 +287,7 @@ export default function Home() {
           <div className="contact-actions">
             <a className="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a>
             <a className="button button-outline" href={`mailto:${email}`}>Send me an email ↗</a>
-            <a className="button button-outline" href="/resume.pdf" download>Download my CV ↓</a>
+            <a className="button button-outline" href="/Mohamed-Samsudeen-Abdulla-CV.pdf" download>Download my CV</a>
             <button className="button button-outline" onClick={copyEmail}>{copied ? "Email copied ✓" : "Copy email address"}</button>
           </div>
           <form className="contact-form" onSubmit={handleContactSubmit}>
