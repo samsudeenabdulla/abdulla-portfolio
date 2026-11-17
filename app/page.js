@@ -145,7 +145,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">Explore my work <span>↗</span></a>
-            <a className="button button-quiet" href="/resume.pdf" download>Download CV <span>↓</span></a>
+            <a className="button button-quiet" href="/Mohamed-Samsudeen-Abdulla-CV.pdf" download>Download CV <span>↓</span></a>
           </div>
           <div className="hero-socials">
             <a href="https://github.com/samsudeenabdulla" target="_blank" rel="noreferrer">GitHub ↗</a>
